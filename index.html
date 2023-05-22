@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poster 2</title>
+</head>
+<body>
+    <h1>Registration Page</h1>
+    <hr>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" value="name" autocomplete="yes" required>
+        <br><br>
+        <label for="emailid">Email id:</label>
+        <input type="email" id="emailid" value="email" autocomplete="yes" required>
+        <br><br>
+        <label for="pswd">Password:</label>
+        <input type="password" id="pswd" value="password" placeholder="enter password" pattern="(?=.*\d)(?.*[a-z])(?=.*[A-Z].{8,})" required>
+        <br><br>
+        <label for="gender">Gender:</label> 
+        <input type="radio" id="gender" value="female" name="gender" required><label for="female">Female:</label>
+        <input type="radio" id="gender" value="male" name="gender" required><label for="male">Male:</label>
+        <br><br>
+        <label for="lang">Language:</label>
+        <input type="checkbox" id="Hindi" value="Hindi" name="language" required><label for="Hindi">Hindi</label>
+        <input type="checkbox" id="English" value="English" name="language" required><label for="English">English</label>
+        <input type="checkbox" id="Gujrati" value="Gujrati" name="language" required><label for="Gujrati">Gujrati</label>
+        <br><br>
+        <label for="drop">Age:</label>
+        <select name="field" id="drop" required>
+            <option value="number" >Select one</option>
+            <option value="number" >20</option>
+            <option value="number" >40</option>
+        </select>
+        <br><br>
+        <input type="submit">
+    </form>
+
+    <h2>Table</h2>
+
+    <hr>
+
+    <table border="1px">
+        <thead>
+            <th>Employee ID</th>
+            <th>Name</th>
+            <th colspan="2">Mobile No</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1001</td>
+                <td>Rusta</td>
+                <td>098865576</td>
+            </tr>
+
+            <tr>
+                <td>1002</td>
+                <td>Jyoti</td>
+                <td>098865576</td>
+                <td>098865576</td>
+            </tr>
+            <tr>
+                <td>1003</td>
+                <td>Sharath</td>
+                <td>098865576</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <h3>List</h3>
+
+    <hr>
+    <ol type="A">
+        <li>Java programming language is designed to build object-oriented application.</li>
+        <li>Java is a multithreaded language with automatic memory management. In java, there is a feature called WORA i.e. write once run anywhere after compilation.</li>
+        <li>Java code can be run on any computing platform.</li>
+        <ul style="list-style: circle;">
+            <li>Unordered List</li>
+            <li>Unordered List</li>
+            <li>Unordered List</li>
+        </ul>
+    </ol>
+    <ol type="I">
+        <li>Java programming language is designed to build object-oriented platform</li>
+        <li>Java is a multithreaded language with automatic memory management. In java, there is a feature called WORA i.e. write once run anywhere after compilation.</li>
+        <li>Java code can be run on any computing platform.</li>
+    </ol>
+
+    <h3>Link</h3>
+    <hr>
+
+    <a href="https://www.prepbytes.com/" target="_blank">This link should be open Same tab</a>
+    <br><br>
+    <a href="https://www.prepbytes.com/" target="_self">The link should be open New tab</a>
+
+    <h3>Image</h3>
+    <hr>
+    <img src="./image.png" width="100%">
+
+</body>
+</html>
